@@ -102,21 +102,22 @@
 
 
 
-  <meta name="description" content="Python中try, finally, return, raise的execution order最近在做项目时经常会对try finally return以及raise的执行顺序感到困惑, 于是做了个实验: 实验1: ​    先看第一段代码, 这里的执行顺序是: 分析:  ​    finally是正如字面描述, 及时函数已经有return的情况下依然会执行, 你甚至可以覆盖return的结">
+  <meta name="description" content="Python中try, finally, return, raise的execution order最近在做项目时经常会对try finally return以及raise的执行顺序感到困惑, 于是做了个实验: 实验1: ​    先看第一段代码, 这里的执行顺序是: 分析: ​    finally是正如字面描述, 及时函数已经有return的情况下依然会执行, 你甚至可以覆盖return的结果">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Practice makes better">
+<meta property="og:title" content="Python中try, finally, return, raise的execution order">
 <meta property="og:url" content="http://yoursite.com/2018/05/05/Python中try, finally, return, raise的execution order/index.html">
-<meta property="og:site_name" content="Practice makes better">
-<meta property="og:description" content="Python中try, finally, return, raise的execution order最近在做项目时经常会对try finally return以及raise的执行顺序感到困惑, 于是做了个实验: 实验1: ​    先看第一段代码, 这里的执行顺序是: 分析:  ​    finally是正如字面描述, 及时函数已经有return的情况下依然会执行, 你甚至可以覆盖return的结">
+<meta property="og:site_name" content="小餐包的个人博客">
+<meta property="og:description" content="Python中try, finally, return, raise的execution order最近在做项目时经常会对try finally return以及raise的执行顺序感到困惑, 于是做了个实验: 实验1: ​    先看第一段代码, 这里的执行顺序是: 分析: ​    finally是正如字面描述, 及时函数已经有return的情况下依然会执行, 你甚至可以覆盖return的结果">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3972009-6a74af81561a633f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3972009-07dcfa31c3617fb5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3972009-5e9d963fd6f26ae4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3972009-ab7c609c1ed79680.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-05-05T06:30:01.015Z">
+<meta property="og:updated_time" content="2018-05-05T07:34:50.202Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Practice makes better">
-<meta name="twitter:description" content="Python中try, finally, return, raise的execution order最近在做项目时经常会对try finally return以及raise的执行顺序感到困惑, 于是做了个实验: 实验1: ​    先看第一段代码, 这里的执行顺序是: 分析:  ​    finally是正如字面描述, 及时函数已经有return的情况下依然会执行, 你甚至可以覆盖return的结">
+<meta name="twitter:title" content="Python中try, finally, return, raise的execution order">
+<meta name="twitter:description" content="Python中try, finally, return, raise的execution order最近在做项目时经常会对try finally return以及raise的执行顺序感到困惑, 于是做了个实验: 实验1: ​    先看第一段代码, 这里的执行顺序是: 分析: ​    finally是正如字面描述, 及时函数已经有return的情况下依然会执行, 你甚至可以覆盖return的结果">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/3972009-6a74af81561a633f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -134,7 +135,7 @@
   };
 </script>
 
-  <title> | Practice makes better</title>
+  <title>Python中try, finally, return, raise的execution order | 小餐包的个人博客</title>
   
 
 
@@ -192,7 +193,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Practice makes better</span>
+        <span class="site-title">小餐包的个人博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -224,6 +225,22 @@
           <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Kategorien</a>
   </li>
         
         
@@ -291,7 +308,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Practice makes better">
+      <meta itemprop="name" content="小餐包的个人博客">
     </span>
 
     
@@ -299,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">Python中try, finally, return, raise的execution order
               
             
           </h1>
@@ -324,7 +341,7 @@
                 
               
 
-              <time title="Post created: 2018-05-05 14:30:00 / Updated at: 14:30:01" itemprop="dateCreated datePublished" datetime="2018-05-05T14:30:00+08:00">2018-05-05</time>
+              <time title="Post created: 2018-05-05 15:12:43 / Updated at: 15:34:50" itemprop="dateCreated datePublished" datetime="2018-05-05T15:12:43+08:00">2018-05-05</time>
             
 
             
@@ -334,6 +351,24 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tech/" itemprop="url" rel="index"><span itemprop="name">Tech</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -365,15 +400,15 @@
         <h1 id="Python中try-finally-return-raise的execution-order"><a href="#Python中try-finally-return-raise的execution-order" class="headerlink" title="Python中try, finally, return, raise的execution order"></a>Python中try, finally, return, raise的execution order</h1><p>最近在做项目时经常会对try finally return以及raise的执行顺序感到困惑, 于是做了个实验:</p>
 <p><strong>实验1:</strong></p>
 <p>​    先看第一段代码, 这里的执行顺序是:<br><img src="http://upload-images.jianshu.io/upload_images/3972009-6a74af81561a633f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="代码1.png"></p>
-<p><strong>分析:</strong> </p>
+<p><strong>分析:</strong></p>
 <p>​    finally是正如字面描述, 及时函数已经有return的情况下依然会执行, 你甚至可以覆盖return的结果.</p>
 <p><strong>实验2:</strong><br><img src="http://upload-images.jianshu.io/upload_images/3972009-07dcfa31c3617fb5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="代码2.png"></p>
 <p><strong>分析:</strong><br>    raise跟return, break一样, 遇到就会跳出block;<br>    有意思的是, 原本以为exception的raise应该在finally之后, 实际却是在finally之后.</p>
 <p><strong>思考</strong>:</p>
 <p>下面两端代码的输出是?<br><img src="http://upload-images.jianshu.io/upload_images/3972009-5e9d963fd6f26ae4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"> <img src="http://upload-images.jianshu.io/upload_images/3972009-ab7c609c1ed79680.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
 <p><strong>结论:</strong></p>
-<ol>
-<li>break return raise这些语句只会使程序跳出try/except/finally对应的block;</li>
+<p>1.<br>   break return raise这些语句只会使程序跳出try/except/finally对应的block;</p>
+<ol start="2">
 <li>finally的block总是在整个try/except之后执行;</li>
 <li>return的结果可以被重写;</li>
 <li>函数的返回值在finally执行完毕以后才’’返回”;</li>
@@ -396,6 +431,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+        </div>
+      
 
       
       
@@ -405,8 +446,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/05/Python开发利器-PyCharm快速上手/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
+              <a href="/2018/05/05/A tour of UI automation test(XCUITest)/" rel="next" title="A tour of UI automation test(XCUITest)">
+                <i class="fa fa-chevron-left"></i> A tour of UI automation test(XCUITest)
               </a>
             
           </div>
@@ -415,8 +456,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/05/A tour of UI automation test(XCUITest)/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/05/Python开发利器-PyCharm快速上手/" rel="prev" title="Python开发利器-PyCharm快速上手">
+                Python开发利器-PyCharm快速上手 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -481,7 +522,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">小餐包</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">Practice Make Better</p>
           </div>
 
           
@@ -498,7 +539,43 @@
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">Kategorien</span>
+                  </a>
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">Tags</span>
+                  </a>
+                </div>
               
             </nav>
           
