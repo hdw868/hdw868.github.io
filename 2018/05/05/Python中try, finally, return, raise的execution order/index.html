@@ -8,7 +8,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="cn">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -78,7 +78,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '6.2.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
@@ -109,12 +109,12 @@
 <meta property="og:url" content="http://yoursite.com/2018/05/05/Python中try, finally, return, raise的execution order/index.html">
 <meta property="og:site_name" content="小餐包的个人博客">
 <meta property="og:description" content="Python中try, finally, return, raise的execution order最近在做项目时经常会对try finally return以及raise的执行顺序感到困惑, 于是做了个实验: 实验1: ​    先看第一段代码, 这里的执行顺序是: 分析: ​    finally是正如字面描述, 及时函数已经有return的情况下依然会执行, 你甚至可以覆盖return的结果">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="cn">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3972009-6a74af81561a633f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3972009-07dcfa31c3617fb5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3972009-5e9d963fd6f26ae4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3972009-ab7c609c1ed79680.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-05-05T07:34:50.202Z">
+<meta property="og:updated_time" content="2018-05-05T07:45:23.064Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python中try, finally, return, raise的execution order">
 <meta name="twitter:description" content="Python中try, finally, return, raise的execution order最近在做项目时经常会对try finally return以及raise的执行顺序感到困惑, 于是做了个实验: 实验1: ​    先看第一段代码, 这里的执行顺序是: 分析: ​    finally是正如字面描述, 及时函数已经有return的情况下依然会执行, 你甚至可以覆盖return的结果">
@@ -175,7 +175,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope itemtype="http://schema.org/WebPage" lang="cn">
 
   
   
@@ -224,7 +224,15 @@
           
           <li class="menu-item menu-item-home">
     <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Accueil</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />A propos</a>
   </li>
         
         
@@ -240,7 +248,7 @@
           
           <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Kategorien</a>
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
   </li>
         
         
@@ -248,16 +256,13 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
   </li>
 
       
       
     </ul>
   
-
-  
-    
 
   
 
@@ -279,6 +284,9 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
           
           <div id="content" class="content">
             
@@ -334,14 +342,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posté le</span>
               
 
               
                 
               
 
-              <time title="Post created: 2018-05-05 15:12:43 / Updated at: 15:34:50" itemprop="dateCreated datePublished" datetime="2018-05-05T15:12:43+08:00">2018-05-05</time>
+              <time title="Post created: 2018-05-05 15:12:43 / Updated at: 15:45:23" itemprop="dateCreated datePublished" datetime="2018-05-05T15:12:43+08:00">2018-05-05</time>
             
 
             
@@ -360,7 +368,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tech/" itemprop="url" rel="index"><span itemprop="name">Tech</span></a></span>
@@ -446,18 +454,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/05/A tour of UI automation test(XCUITest)/" rel="next" title="A tour of UI automation test(XCUITest)">
-                <i class="fa fa-chevron-left"></i> A tour of UI automation test(XCUITest)
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/05/Python开发利器-PyCharm快速上手/" rel="prev" title="Python开发利器-PyCharm快速上手">
-                Python开发利器-PyCharm快速上手 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/05/如何养成跑步的习惯/" rel="prev" title="如何养成跑步的习惯">
+                如何养成跑步的习惯 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -509,10 +513,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Inhaltsverzeichnis
+            Table Des Matières
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Übersicht
+            Ensemble
           </li>
         </ul>
       
@@ -533,7 +537,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">4</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-name">articles</span>
                   </a>
                 </div>
               
@@ -550,7 +554,7 @@
                       
                     
                     <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">Kategorien</span>
+                    <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
               
@@ -573,7 +577,7 @@
                       
                     
                     <span class="site-state-item-count">5</span>
-                    <span class="site-state-item-name">Tags</span>
+                    <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
               
@@ -642,7 +646,7 @@
 
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
 
 
 
@@ -650,7 +654,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.2.0</div>
+  <div class="theme-info">Thème &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.2.0</div>
 
 
 
@@ -739,6 +743,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.2.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.2.0"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
