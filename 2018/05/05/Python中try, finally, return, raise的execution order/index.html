@@ -8,7 +8,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-CN">
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,6 +16,10 @@
 <meta name="theme-color" content="#222">
 
 
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
 
 
 
@@ -78,7 +82,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     version: '6.2.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
@@ -107,7 +111,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python中try, finally, return, raise的execution order">
 <meta property="og:url" content="http://yoursite.com/2018/05/05/Python中try, finally, return, raise的execution order/index.html">
-<meta property="og:site_name" content="浪里个浪">
+<meta property="og:site_name" content="小餐包的个人博客">
 <meta property="og:description" content="Python中try, finally, return, raise的execution order最近在做项目时经常会对try finally return以及raise的执行顺序感到困惑, 于是做了个实验: 实验1: ​    先看第一段代码, 这里的执行顺序是: 分析: ​    finally是正如字面描述, 及时函数已经有return的情况下依然会执行, 你甚至可以覆盖return的结果">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/3972009-6a74af81561a633f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
@@ -135,7 +139,7 @@
   };
 </script>
 
-  <title>Python中try, finally, return, raise的execution order | 浪里个浪</title>
+  <title>Python中try, finally, return, raise的execution order | 小餐包的个人博客</title>
   
 
 
@@ -193,12 +197,12 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">浪里个浪</span>
+        <span class="site-title">小餐包的个人博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">浪里个浪哟~</p>
       
   </div>
 
@@ -265,9 +269,6 @@
   
 
   
-    
-
-  
 
   
 </nav>
@@ -287,6 +288,9 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
           
           <div id="content" class="content">
             
@@ -312,11 +316,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小餐包">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://blog-1256665008.cos.ap-shanghai.myqcloud.com/20BF5D9B-AAC2-4C48-BE65-F7AFCE1BF9C1-3687-000002E84F566D93_tmp.JPG?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDxTg8TD92rKoqBb1OiqUyEqWVWFGSry3l%26q-sign-time%3D1525572873%3B1525574673%26q-key-time%3D1525572873%3B1525574673%26q-header-list%3D%26q-url-param-list%3D%26q-signature%3D6b6844c21cf521d32321f152da829c53af1bef23&token=32899df685a9fab16d7abb21c0516f0df137b34b10001&clientIP=112.10.139.22&clientUA=a70de368-e285-40af-a491-e5dbb22d4347">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="浪里个浪">
+      <meta itemprop="name" content="小餐包的个人博客">
     </span>
 
     
@@ -387,6 +391,14 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -448,14 +460,26 @@
 
       
       
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
       
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/05/Python开发利器-PyCharm快速上手/" rel="next" title="Python开发利器-PyCharm快速上手">
-                <i class="fa fa-chevron-left"></i> Python开发利器-PyCharm快速上手
+              <a href="/2018/05/05/A tour of UI automation test(XCUITest)/" rel="next" title="A tour of UI automation test(XCUITest)">
+                <i class="fa fa-chevron-left"></i> A tour of UI automation test(XCUITest)
               </a>
             
           </div>
@@ -463,10 +487,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/05/如何养成跑步的习惯/" rel="prev" title="如何养成跑步的习惯">
-                如何养成跑步的习惯 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -529,6 +549,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="https://blog-1256665008.cos.ap-shanghai.myqcloud.com/20BF5D9B-AAC2-4C48-BE65-F7AFCE1BF9C1-3687-000002E84F566D93_tmp.JPG?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDxTg8TD92rKoqBb1OiqUyEqWVWFGSry3l%26q-sign-time%3D1525572873%3B1525574673%26q-key-time%3D1525572873%3B1525574673%26q-header-list%3D%26q-url-param-list%3D%26q-signature%3D6b6844c21cf521d32321f152da829c53af1bef23&token=32899df685a9fab16d7abb21c0516f0df137b34b10001&clientIP=112.10.139.22&clientUA=a70de368-e285-40af-a491-e5dbb22d4347"
+                alt="小餐包" />
+            
               <p class="site-author-name" itemprop="name">小餐包</p>
               <p class="site-description motion-element" itemprop="description">书写是为了更好的记忆</p>
           </div>
@@ -590,6 +614,20 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/hdw868" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:hdw868@126.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
           
 
           
@@ -658,12 +696,30 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Mist</a> v6.2.0</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.2.0</div>
 
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -748,6 +804,13 @@
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.2.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.2.0"></script>
+
+
+
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script>
@@ -804,6 +867,32 @@
 
   
   
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+  </script>
+
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: ,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
 
   
 
