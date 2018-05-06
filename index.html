@@ -102,16 +102,16 @@
 
 
 
-  <meta name="description" content="Practice Make Better">
+  <meta name="description" content="书写是为了更好的记忆">
 <meta property="og:type" content="website">
-<meta property="og:title" content="小餐包的个人博客">
+<meta property="og:title" content="浪里个浪">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="小餐包的个人博客">
-<meta property="og:description" content="Practice Make Better">
+<meta property="og:site_name" content="浪里个浪">
+<meta property="og:description" content="书写是为了更好的记忆">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小餐包的个人博客">
-<meta name="twitter:description" content="Practice Make Better">
+<meta name="twitter:title" content="浪里个浪">
+<meta name="twitter:description" content="书写是为了更好的记忆">
 
 
 
@@ -128,7 +128,7 @@
   };
 </script>
 
-  <title>小餐包的个人博客</title>
+  <title>浪里个浪</title>
   
 
 
@@ -187,7 +187,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">小餐包的个人博客</span>
+        <span class="site-title">浪里个浪</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -301,361 +301,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/05/A tour of UI automation test(XCUITest)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小餐包">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小餐包的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/05/A tour of UI automation test(XCUITest)/" itemprop="url">
-                  A tour of UI automation test(XCUITest)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2018-05-05 15:12:43 / Updated at: 15:35:57" itemprop="dateCreated datePublished" datetime="2018-05-05T15:12:43+08:00">2018-05-05</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">in</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tech/" itemprop="url" rel="index"><span itemprop="name">Tech</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="A-tour-of-UI-automation-test-XCUITest"><a href="#A-tour-of-UI-automation-test-XCUITest" class="headerlink" title="A tour of UI automation test(XCUITest)"></a>A tour of UI automation test(XCUITest)</h1><p>UITesting is the most challenge work of automation test. Waiting for the project to be complied and then operating the UI to the place we want to test is a waste of our beautiful life and splendid youth. Here is the summary of my UI automation tour after spending about 1 month studying the XCUITest of Apple introduced in WWDC2015.</p>
-<p><strong>Pros:</strong></p>
-<ul>
-<li>Save your time to do more exploratory testing, TE is released from repeating work especially in regression test.</li>
-<li>The SE can use the TestSuit to validate their code before merging their code;</li>
-<li>Integrated with CI.</li>
-</ul>
-<p><strong>Cons.</strong></p>
-<p>-<br>  Develop and maintenance cost massive time, especially when the UI changed frequently.</p>
-<ul>
-<li>The test scripts is not stable, is very fragile when there is any disturbance.</li>
-<li>Some UI-element, for example the webView is not well recognized, making it difficult to define the element.(In fact I found the only way that make it easier is to add title in every DOM object, which is just not the usual pattern that SE will use)</li>
-<li>The waiting time is hard to define when the server suffers large lag due to international network access.</li>
-</ul>
-<p><strong> Suggestion: </strong></p>
-<ol>
-<li><p>When getting/setting dynamic value, waitFor method should be called to make sure the UI is editable;</p>
-</li>
-<li><p>A <em>waitFor</em> method should be called to make sure if an window is exists or not if required;</p>
-</li>
-<li>The tests case should be able to run alone, this means if case 1 fails then I should be able to run case 2 success.</li>
-<li>Use Page-Object Pattern as suggested in Seliunium HQ community. This means there should be: Page class(define the UI element and method), Utility class(define the basic method such as waitFor, handle the alert), and TestCase class(define the test steps of each case and assert the result, no element or method should be defined here!)</li>
-<li>Only develop modules that are stable (the layout level at least), don’t waste too much time in edge module;</li>
-</ol>
-<p>Following is an example of the structure of Page-Object Pattern:<br>Let’s say Environment page which include the environment item and login dialogue, the user name and password input.</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/05/Python中try, finally, return, raise的execution order/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小餐包">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小餐包的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/05/Python中try, finally, return, raise的execution order/" itemprop="url">
-                  Python中try, finally, return, raise的execution order
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              
-                
-              
-
-              <time title="Post created: 2018-05-05 15:12:43 / Updated at: 15:45:23" itemprop="dateCreated datePublished" datetime="2018-05-05T15:12:43+08:00">2018-05-05</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">in</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tech/" itemprop="url" rel="index"><span itemprop="name">Tech</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Python中try-finally-return-raise的execution-order"><a href="#Python中try-finally-return-raise的execution-order" class="headerlink" title="Python中try, finally, return, raise的execution order"></a>Python中try, finally, return, raise的execution order</h1><p>最近在做项目时经常会对try finally return以及raise的执行顺序感到困惑, 于是做了个实验:</p>
-<p><strong>实验1:</strong></p>
-<p>​    先看第一段代码, 这里的执行顺序是:<br><img src="http://upload-images.jianshu.io/upload_images/3972009-6a74af81561a633f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="代码1.png"></p>
-<p><strong>分析:</strong></p>
-<p>​    finally是正如字面描述, 及时函数已经有return的情况下依然会执行, 你甚至可以覆盖return的结果.</p>
-<p><strong>实验2:</strong><br><img src="http://upload-images.jianshu.io/upload_images/3972009-07dcfa31c3617fb5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="代码2.png"></p>
-<p><strong>分析:</strong><br>    raise跟return, break一样, 遇到就会跳出block;<br>    有意思的是, 原本以为exception的raise应该在finally之后, 实际却是在finally之后.</p>
-<p><strong>思考</strong>:</p>
-<p>下面两端代码的输出是?<br><img src="http://upload-images.jianshu.io/upload_images/3972009-5e9d963fd6f26ae4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"> <img src="http://upload-images.jianshu.io/upload_images/3972009-ab7c609c1ed79680.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p><strong>结论:</strong></p>
-<p>1.<br>   break return raise这些语句只会使程序跳出try/except/finally对应的block;</p>
-<ol start="2">
-<li>finally的block总是在整个try/except之后执行;</li>
-<li>return的结果可以被重写;</li>
-<li>函数的返回值在finally执行完毕以后才’’返回”;</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/05/Python开发利器-PyCharm快速上手/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -665,7 +310,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小餐包的个人博客">
+      <meta itemprop="name" content="浪里个浪">
     </span>
 
     
@@ -886,6 +531,361 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/05/A tour of UI automation test(XCUITest)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小餐包">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="浪里个浪">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/05/A tour of UI automation test(XCUITest)/" itemprop="url">
+                  A tour of UI automation test(XCUITest)
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-05-05 15:12:43 / Updated at: 15:35:57" itemprop="dateCreated datePublished" datetime="2018-05-05T15:12:43+08:00">2018-05-05</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tech/" itemprop="url" rel="index"><span itemprop="name">Tech</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="A-tour-of-UI-automation-test-XCUITest"><a href="#A-tour-of-UI-automation-test-XCUITest" class="headerlink" title="A tour of UI automation test(XCUITest)"></a>A tour of UI automation test(XCUITest)</h1><p>UITesting is the most challenge work of automation test. Waiting for the project to be complied and then operating the UI to the place we want to test is a waste of our beautiful life and splendid youth. Here is the summary of my UI automation tour after spending about 1 month studying the XCUITest of Apple introduced in WWDC2015.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Save your time to do more exploratory testing, TE is released from repeating work especially in regression test.</li>
+<li>The SE can use the TestSuit to validate their code before merging their code;</li>
+<li>Integrated with CI.</li>
+</ul>
+<p><strong>Cons.</strong></p>
+<p>-<br>  Develop and maintenance cost massive time, especially when the UI changed frequently.</p>
+<ul>
+<li>The test scripts is not stable, is very fragile when there is any disturbance.</li>
+<li>Some UI-element, for example the webView is not well recognized, making it difficult to define the element.(In fact I found the only way that make it easier is to add title in every DOM object, which is just not the usual pattern that SE will use)</li>
+<li>The waiting time is hard to define when the server suffers large lag due to international network access.</li>
+</ul>
+<p><strong> Suggestion: </strong></p>
+<ol>
+<li><p>When getting/setting dynamic value, waitFor method should be called to make sure the UI is editable;</p>
+</li>
+<li><p>A <em>waitFor</em> method should be called to make sure if an window is exists or not if required;</p>
+</li>
+<li>The tests case should be able to run alone, this means if case 1 fails then I should be able to run case 2 success.</li>
+<li>Use Page-Object Pattern as suggested in Seliunium HQ community. This means there should be: Page class(define the UI element and method), Utility class(define the basic method such as waitFor, handle the alert), and TestCase class(define the test steps of each case and assert the result, no element or method should be defined here!)</li>
+<li>Only develop modules that are stable (the layout level at least), don’t waste too much time in edge module;</li>
+</ol>
+<p>Following is an example of the structure of Page-Object Pattern:<br>Let’s say Environment page which include the environment item and login dialogue, the user name and password input.</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/05/Python中try, finally, return, raise的execution order/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小餐包">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="浪里个浪">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/05/Python中try, finally, return, raise的execution order/" itemprop="url">
+                  Python中try, finally, return, raise的execution order
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-05-05 15:12:43 / Updated at: 15:45:23" itemprop="dateCreated datePublished" datetime="2018-05-05T15:12:43+08:00">2018-05-05</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tech/" itemprop="url" rel="index"><span itemprop="name">Tech</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Python中try-finally-return-raise的execution-order"><a href="#Python中try-finally-return-raise的execution-order" class="headerlink" title="Python中try, finally, return, raise的execution order"></a>Python中try, finally, return, raise的execution order</h1><p>最近在做项目时经常会对try finally return以及raise的执行顺序感到困惑, 于是做了个实验:</p>
+<p><strong>实验1:</strong></p>
+<p>​    先看第一段代码, 这里的执行顺序是:<br><img src="http://upload-images.jianshu.io/upload_images/3972009-6a74af81561a633f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="代码1.png"></p>
+<p><strong>分析:</strong></p>
+<p>​    finally是正如字面描述, 及时函数已经有return的情况下依然会执行, 你甚至可以覆盖return的结果.</p>
+<p><strong>实验2:</strong><br><img src="http://upload-images.jianshu.io/upload_images/3972009-07dcfa31c3617fb5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="代码2.png"></p>
+<p><strong>分析:</strong><br>    raise跟return, break一样, 遇到就会跳出block;<br>    有意思的是, 原本以为exception的raise应该在finally之后, 实际却是在finally之后.</p>
+<p><strong>思考</strong>:</p>
+<p>下面两端代码的输出是?<br><img src="http://upload-images.jianshu.io/upload_images/3972009-5e9d963fd6f26ae4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"> <img src="http://upload-images.jianshu.io/upload_images/3972009-ab7c609c1ed79680.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><strong>结论:</strong></p>
+<p>1.<br>   break return raise这些语句只会使程序跳出try/except/finally对应的block;</p>
+<ol start="2">
+<li>finally的block总是在整个try/except之后执行;</li>
+<li>return的结果可以被重写;</li>
+<li>函数的返回值在finally执行完毕以后才’’返回”;</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/05/如何养成跑步的习惯/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -895,7 +895,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小餐包的个人博客">
+      <meta itemprop="name" content="浪里个浪">
     </span>
 
     
@@ -1088,7 +1088,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">小餐包</p>
-              <p class="site-description motion-element" itemprop="description">Practice Make Better</p>
+              <p class="site-description motion-element" itemprop="description">书写是为了更好的记忆</p>
           </div>
 
           
