@@ -106,25 +106,28 @@
 
 
 
-  <meta name="description" content="测试框架开发小结(Draft):一个好的测试框架应该具备以下特征:     Basic:  准确, 测试结果必须是可靠的, pass就是pass, fail不是因为runtime error;  稳定, 单个测试的fail不影响其他case的执行, 但某个错误会导致后续执行无意义则应尽早退出;  灵活, 测试执行的范围是可灵活配置的, 按特性, 按tag, retry功能; 测试数据的允许自定义,">
-<meta name="keywords" content="Test,Automation">
+  <meta name="description" content="Python开发利器-PyCharm快速上手一开始接触PyCharm时, 其实我是, 拒绝的.  早期为了打好基础一直坚持用Atom做开发, 日积月累习惯了便习以为然. Atom有诸多优点, 丰富的插件, 开源免费, 轻量级; 当然最大缺点还是性能问题, 打开一个10M左右的文本肯定会停止响应导致只能强行关闭了. 另外,缺乏go to definition(有插件,但是支持比较差, 经常碰到无法跳">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试框架开发小结(Draft)">
-<meta property="og:url" content="http://yoursite.com/2018/05/08/测试框架开发总结/index.html">
+<meta property="og:title" content="Python开发利器-PyCharm快速上手">
+<meta property="og:url" content="http://yoursite.com/2018/09/17/Python开发利器-PyCharm快速上手/index.html">
 <meta property="og:site_name" content="小餐包的个人博客">
-<meta property="og:description" content="测试框架开发小结(Draft):一个好的测试框架应该具备以下特征:     Basic:  准确, 测试结果必须是可靠的, pass就是pass, fail不是因为runtime error;  稳定, 单个测试的fail不影响其他case的执行, 但某个错误会导致后续执行无意义则应尽早退出;  灵活, 测试执行的范围是可灵活配置的, 按特性, 按tag, retry功能; 测试数据的允许自定义,">
+<meta property="og:description" content="Python开发利器-PyCharm快速上手一开始接触PyCharm时, 其实我是, 拒绝的.  早期为了打好基础一直坚持用Atom做开发, 日积月累习惯了便习以为然. Atom有诸多优点, 丰富的插件, 开源免费, 轻量级; 当然最大缺点还是性能问题, 打开一个10M左右的文本肯定会停止响应导致只能强行关闭了. 另外,缺乏go to definition(有插件,但是支持比较差, 经常碰到无法跳">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-11T13:48:19.195Z">
+<meta property="og:image" content="http://p8d0a5y52.bkt.clouddn.com/myblog/180507/BFjcKC9kIg.png?imageslim">
+<meta property="og:image" content="http://p8d0a5y52.bkt.clouddn.com/myblog/180507/lheIHJ553i.jpg?imageslim">
+<meta property="og:updated_time" content="2018-09-23T11:21:57.632Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="测试框架开发小结(Draft)">
-<meta name="twitter:description" content="测试框架开发小结(Draft):一个好的测试框架应该具备以下特征:     Basic:  准确, 测试结果必须是可靠的, pass就是pass, fail不是因为runtime error;  稳定, 单个测试的fail不影响其他case的执行, 但某个错误会导致后续执行无意义则应尽早退出;  灵活, 测试执行的范围是可灵活配置的, 按特性, 按tag, retry功能; 测试数据的允许自定义,">
+<meta name="twitter:title" content="Python开发利器-PyCharm快速上手">
+<meta name="twitter:description" content="Python开发利器-PyCharm快速上手一开始接触PyCharm时, 其实我是, 拒绝的.  早期为了打好基础一直坚持用Atom做开发, 日积月累习惯了便习以为然. Atom有诸多优点, 丰富的插件, 开源免费, 轻量级; 当然最大缺点还是性能问题, 打开一个10M左右的文本肯定会停止响应导致只能强行关闭了. 另外,缺乏go to definition(有插件,但是支持比较差, 经常碰到无法跳">
+<meta name="twitter:image" content="http://p8d0a5y52.bkt.clouddn.com/myblog/180507/BFjcKC9kIg.png?imageslim">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/08/测试框架开发总结/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/17/Python开发利器-PyCharm快速上手/"/>
 
 
 
@@ -134,7 +137,7 @@
   };
 </script>
 
-  <title>测试框架开发小结(Draft) | 小餐包的个人博客</title>
+  <title>Python开发利器-PyCharm快速上手 | 小餐包的个人博客</title>
   
 
 
@@ -239,7 +242,7 @@
           
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">8</span></a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">10</span></a>
   </li>
         
         
@@ -255,7 +258,7 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">9</span></a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">12</span></a>
   </li>
 
       
@@ -306,7 +309,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/08/测试框架开发总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/17/Python开发利器-PyCharm快速上手/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小餐包">
@@ -323,7 +326,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">测试框架开发小结(Draft)
+          <h1 class="post-title" itemprop="name headline">Python开发利器-PyCharm快速上手
               
             
           </h1>
@@ -348,7 +351,7 @@
                 
               
 
-              <time title="创建时间：2018-05-08 21:12:43" itemprop="dateCreated datePublished" datetime="2018-05-08T21:12:43+08:00">2018-05-08</time>
+              <time title="创建时间：2018-09-17 07:23:43" itemprop="dateCreated datePublished" datetime="2018-09-17T07:23:43+08:00">2018-09-17</time>
             
 
             
@@ -365,7 +368,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-11 21:48:19" itemprop="dateModified" datetime="2018-05-11T21:48:19+08:00">2018-05-11</time>
+                <time title="修改时间：2018-09-23 19:21:57" itemprop="dateModified" datetime="2018-09-23T19:21:57+08:00">2018-09-23</time>
               
             
           </span>
@@ -424,52 +427,87 @@
       
 
       
-        <h1 id="测试框架开发小结-Draft"><a href="#测试框架开发小结-Draft" class="headerlink" title="测试框架开发小结(Draft):"></a>测试框架开发小结(Draft):</h1><p><strong>一个好的测试框架应该具备以下特征:</strong></p>
-<p><strong>    Basic:</strong></p>
-<ul>
-<li><p><strong>准确</strong>, 测试结果必须是可靠的, pass就是pass, fail不是因为runtime error;</p>
-</li>
-<li><p><strong>稳定</strong>, 单个测试的fail不影响其他case的执行, 但某个错误会导致后续执行无意义则应尽早退出;</p>
-</li>
-<li><p><strong>灵活</strong>, 测试执行的范围是可灵活配置的, 按特性, 按tag, retry功能; 测试数据的允许自定义, 允许用户执行测试前执行特定的脚本, 允许用户配置测试执行的环境变量(比如token, key, username, pwd等信息);</p>
-</li>
-<li><p><strong>易拓展</strong>, 用户如何新增自己的测试场景, 如何定义自己的特定配置;</p>
-</li>
-<li><p><strong>完整性</strong>, 下载安装一次到位, 不需要多次安装依赖包等操作;</p>
-<p><strong>Nice to Have:</strong></p>
-</li>
-<li><p><strong>并发执行</strong>, 测试执行可以再多个环境上并发执行;</p>
-</li>
-<li><p><strong>兼容性</strong>, 支持跨平台执行;</p>
-</li>
-<li><p><strong>有数据分析,</strong> 一个好的测试框架应该提供直观的测试数据分析功能, 包括测试通过率, 执行时间, fail track, sync with bug system, write result to db;</p>
-</li>
-</ul>
-<p><strong>需要明确的地方:</strong></p>
-<p>明确测试流程, 测试依赖, 测试数据来源, 测试干扰(网络延迟)</p>
-<p><strong>实现层面的考虑:</strong></p>
+        <h1 id="Python开发利器-PyCharm快速上手"><a href="#Python开发利器-PyCharm快速上手" class="headerlink" title="Python开发利器-PyCharm快速上手"></a>Python开发利器-PyCharm快速上手</h1><p>一开始接触PyCharm时, 其实我是, 拒绝的.  早期为了打好基础一直坚持用Atom做开发, 日积月累习惯了便习以为然. Atom有诸多优点, 丰富的插件, 开源免费, 轻量级; 当然最大缺点还是性能问题, 打开一个10M左右的文本肯定会停止响应导致只能强行关闭了. 另外,缺乏go to definition(有插件,但是支持比较差, 经常碰到无法跳转的情况)实在很不方便. 我想是时候试试主流IDE了, 然后当我试了一下PyCharm, 发现”duang~”,  真的好用.</p>
+<p><strong>Note:</strong> 这里建议大家在学习初期还是坚持不要太依赖IDE提供的编辑功能, 这些功能太便捷了以至于有时离开ide出错之后你错的莫名奇妙. 我见过不少同学依赖IDE把当前项目路径加到path, 导致这种脚本经常换个环境就嗝屁.</p>
+<p>扯远了, 下面给出干货, 基于使用场景, 整理了若干技巧, 这些技巧只要基于场景有意识的使用就能迅速掌握, 不需要死记硬背. 这些都是我个人极力推荐熟练使用的功能, 帮你写代码时行云流水, 写完后神清气爽~</p>
 <ol>
-<li>Exception Hierarchy设计, custom Exception, handle Exception;</li>
-<li>logging系统设计, console输出, file输出;</li>
-<li><p>Test Object设计, feature, scenario, case</p>
-<ul>
-<li><p>抽象类Test Object, tag, dependency, configuration属性, run_test, setup, teardown方法;</p>
+<li><p><strong>全局搜索:</strong> <em>Ctrl+Shift+F</em>,</p>
+<p>不过PyCharm的更强大, 你可以点选左侧某个目录后再按<em>Ctrl+Shift+F</em>, 这样默认会搜索改目录;</p>
+<p><strong>tip:</strong> 如果只是想高亮下文件, 只要选中Project Navigator然后直接打字就会自动高亮所有匹配的文件;</p>
 </li>
-<li><p>feature包含scenario, scenario包含case;</p>
+<li><p><strong>添加注释:</strong> <em>Ctrl+/</em>, 再按一遍取消注释</p>
 </li>
-</ul>
+<li><p><strong>重构Refactor:</strong> <em>Ctrl+Alt+Shift+T</em></p>
+<p>有时候代码写了好长了, 发现当初文件命名不合理, 手动修改需要遍历所有引用的地方? 这时选择对应的文件/文件夹后, Ctrl+Alt+Shift+T后选择 rename; 如果是文件目录分类不合理希望移动就选move; 如果选择代码中的任意变量或者常量, function name等等, 选择rename, 自动帮你把所有引用的地方和定义修改掉, 而且提供preview功能确保不会错误的修改某些地方.</p>
 </li>
-<li>Report系统, 将测试数据结构, pass, fail, skip数据以html方式展示;</li>
-<li>DB系统, 测试结果回写到后台数据库;</li>
-<li>Unix和Windows平台兼容性, 分隔符, 换行符处理等;</li>
-<li>多线程, 测试数据准备, 测试执行并发系统(队列系统);</li>
-<li>任务分发系统, 测试分发到不同executor上执行;</li>
-</ol>
-<p><strong>Python层面:</strong></p>
-<ol>
-<li>谨慎的使用tuple作为返回值, 有些返回值使用字典更加灵活;</li>
-<li>设计好目录层级, 参考cucumber的folder;</li>
-<li>测试的执行可以用配置文件来管理, 提供默认配置和按指定配置执行;</li>
+<li><p><strong>自动PEP8风格</strong>: <em>Ctrl+Alt+L</em></p>
+<p>满眼的波浪线提示你代码风格混乱时用一下, 世界清净了;</p>
+</li>
+<li><p><strong>优化import语句排序</strong>：<em>Ctrl+Alt+O</em><br>自动去除没有使用的package，按照build-in，3rd part和project-level排序导入的module</p>
+</li>
+<li><p><strong>智能纠正</strong>:  <em>Alt+Enter</em></p>
+<p>在还没import(install)模块名上使用会import(install)相对应的模块，免去跑到代码顶部写import;</p>
+<p>在方法名上使用补注释，在测试中使用帮你补充断言代码……不管出错了不知道怎么办，知道怎么办想这么办时都按下这个快捷键，有惊喜!</p>
+</li>
+<li><p><strong>运行当前文件</strong>: <em>Ctrl+Shift+F10</em></p>
+<p>十分智能，如果是测试代码，则以测试模式run，并列出测试通过情况</p>
+</li>
+<li><p><strong>查注释(docstring)</strong>: <em>Ctrl+Q</em></p>
+</li>
+<li><p><strong>查定义的(源代码)</strong>: <em>Ctrl+B/Ctrl+I</em></p>
+</li>
+<li><p><strong>查看参数</strong>: <em>Ctrl+P</em></p>
+<p>在括号内按下，就知道当前位置该给啥参数</p>
+</li>
+<li><p><strong>另起一行</strong>: <em>Shift+Enter</em></p>
+<p>光标在行内任意位置都能另起一行，且不破坏当行结构;</p>
+</li>
+<li><p><strong>复制当前行</strong>: <em>Ctrl+D</em></p>
+</li>
+<li><p><strong>删除当前行</strong>(其实是剪切当前行): <em>Ctrl+X</em></p>
+</li>
+<li><p><strong>弹出常用的snippet</strong>: *Ctrl+J</p>
+<p>比如: if <strong>name</strong> == “<strong>main</strong>“:</p>
+</li>
+<li><p><strong>搜索一切</strong>: 双击<code>shift</code></p>
+<p>搜索一切，不管是IDE功能、文件、方法、变量……都能搜索</p>
+</li>
+<li><p><strong>Ctrl+光标</strong></p>
+<p>当按住ctrl，鼠标移到标识符上面时，会显示一些提示信息。</p>
+<p>当按住ctrl，并点击时，可以跳到定义处或者弹框列出所有引用的地方，只有一个地方引用时，会直接跳</p>
+</li>
+<li><p><strong>最近打开的文件</strong>: <em>Ctrl+E</em></p>
+</li>
+<li><p><strong>智能补全Tab</strong>:</p>
+<p>这个应该都知道, 补充一个, 输入a.print然后按tab有惊喜</p>
+</li>
+<li><p><strong>Surround with:</strong> <em>Ctrl+Alt+T</em></p>
+<p>比如将光标所在的语句或块用try…except…包住。</p>
+</li>
+<li><p><strong>Extend Selection:</strong> <em>Ctrl+W</em></p>
+<p>往外扩展选择范围。我一般用来选中单词、两个引号或括号之间的内容。</p>
+</li>
+<li><p><strong>Surround selection on typing  quote or brace:</strong></p>
+<p>这个是个setting, 设置一下方便不少, Ctrl+Shift+A搜索smart keys, 勾选Surround selection on typing  quote or brace, 这样选中文字后引号或者括号或自动加到头尾两侧, 而不是替换文字;<br><img src="http://p8d0a5y52.bkt.clouddn.com/myblog/180507/BFjcKC9kIg.png?imageslim" alt="mark"></p>
+</li>
+<li><p><strong>打开/关闭Project目录树（小屏幕常用）</strong>：<em>Alt+1</em></p>
+</li>
+<li><p><strong>后退/前进到之前的代码（类似于浏览历史，代码跳转的时候特别有用）</strong>：<em>Alt+Shift+Left/Right</em></p>
+</li>
+<li><p><strong>复制当前文件的绝对路径</strong>：<em>Ctrl+Shift+C</em></p>
+</li>
+<li><p><strong>Debug, VCS功能,</strong> 这几块也是很强大的, 讲解起来比较费劲, <strong>强烈建议</strong>大家看下官方的介绍视频, 受益匪浅!</p>
+<p><a href="https://www.bilibili.com/video/av7848443/?p=7" target="_blank" rel="noopener">https://www.bilibili.com/video/av7848443/?p=7</a></p>
+<p><a href="https://www.bilibili.com/video/av7848443/?p=11" target="_blank" rel="noopener">https://www.bilibili.com/video/av7848443/?p=11</a></p>
+<p><a href="https://www.bilibili.com/video/av7848443/?p=12" target="_blank" rel="noopener">https://www.bilibili.com/video/av7848443/?p=12</a></p>
+<p><a href="https://www.bilibili.com/video/av7848443/?p=13" target="_blank" rel="noopener">https://www.bilibili.com/video/av7848443/?p=13</a></p>
+<p><strong>补充几个VCS相关快捷键：</strong></p>
+<p>Ctrl+T：更新project操作（默认是先stash再pull）</p>
+<p>Ctrl+Alt+A：Git add当前文件</p>
+<p>Ctrl+K：Git commit操作</p>
+<p>Ctrl+Shift+K: Git push操作</p>
+<p>最后附一张麻瓜编程制作的一张快捷键map图:<br><img src="http://p8d0a5y52.bkt.clouddn.com/myblog/180507/lheIHJ553i.jpg?imageslim" alt="mark"></p>
+</li>
 </ol>
 
       
@@ -491,9 +529,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Test/" rel="tag"># Test</a>
-          
-            <a href="/tags/Automation/" rel="tag"># Automation</a>
+            <a href="/tags/Python/" rel="tag"># Python</a>
           
         </div>
       
@@ -518,8 +554,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/05/Python开发利器-PyCharm快速上手/" rel="next" title="Python开发利器-PyCharm快速上手">
-                <i class="fa fa-chevron-left"></i> Python开发利器-PyCharm快速上手
+              <a href="/2018/09/02/测试框架开发总结/" rel="next" title="测试框架开发小结(Draft)">
+                <i class="fa fa-chevron-left"></i> 测试框架开发小结(Draft)
               </a>
             
           </div>
@@ -527,10 +563,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/11/Recommended Material to Learn Ruby [Beginner]/" rel="prev" title="Recommended Material to Learn Ruby for Beginner">
-                Recommended Material to Learn Ruby for Beginner <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -608,7 +640,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -654,7 +686,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">8</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -704,7 +740,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#测试框架开发小结-Draft"><span class="nav-number">1.</span> <span class="nav-text">测试框架开发小结(Draft):</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python开发利器-PyCharm快速上手"><span class="nav-number">1.</span> <span class="nav-text">Python开发利器-PyCharm快速上手</span></a></li></ol></div>
             
 
           </div>
