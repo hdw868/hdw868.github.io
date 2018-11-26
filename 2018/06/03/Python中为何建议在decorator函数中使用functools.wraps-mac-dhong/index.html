@@ -106,23 +106,29 @@
 
 
 
-  <meta name="description" content="书写是为了更好的记忆">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小餐包的个人博客">
-<meta property="og:url" content="http://yoursite.com/tags/Test/index.html">
+  <meta name="description" content="python中为何建议在decorator函数中使用functools.wraps以最为常见的time_it装饰器函数为例， 如下代码中：  第一个time_it函数没有使用functools.wraps, 功能上这个装饰器并没有什么问题；  第二个better_time_it在wrapper函数面前又加了一个@functools.wraps(func)函数， 其他代码一致；   出来走几步看下，">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python中为何建议在decorator函数中使用functools.wraps">
+<meta property="og:url" content="http://yoursite.com/2018/06/03/Python中为何建议在decorator函数中使用functools.wraps-mac-dhong/index.html">
 <meta property="og:site_name" content="小餐包的个人博客">
-<meta property="og:description" content="书写是为了更好的记忆">
+<meta property="og:description" content="python中为何建议在decorator函数中使用functools.wraps以最为常见的time_it装饰器函数为例， 如下代码中：  第一个time_it函数没有使用functools.wraps, 功能上这个装饰器并没有什么问题；  第二个better_time_it在wrapper函数面前又加了一个@functools.wraps(func)函数， 其他代码一致；   出来走几步看下，">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://p8d0a5y52.bkt.clouddn.com/myblog/180603/fIl5a42m4m.png?imageslim">
+<meta property="og:image" content="http://p8d0a5y52.bkt.clouddn.com/myblog/180603/md2KeBm37B.png?imageslim">
+<meta property="og:image" content="http://p8d0a5y52.bkt.clouddn.com/myblog/180603/AjBjKlcjg4.png?imageslim">
+<meta property="og:updated_time" content="2018-06-03T04:37:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小餐包的个人博客">
-<meta name="twitter:description" content="书写是为了更好的记忆">
+<meta name="twitter:title" content="python中为何建议在decorator函数中使用functools.wraps">
+<meta name="twitter:description" content="python中为何建议在decorator函数中使用functools.wraps以最为常见的time_it装饰器函数为例， 如下代码中：  第一个time_it函数没有使用functools.wraps, 功能上这个装饰器并没有什么问题；  第二个better_time_it在wrapper函数面前又加了一个@functools.wraps(func)函数， 其他代码一致；   出来走几步看下，">
+<meta name="twitter:image" content="http://p8d0a5y52.bkt.clouddn.com/myblog/180603/fIl5a42m4m.png?imageslim">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/Test/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/03/Python中为何建议在decorator函数中使用functools.wraps-mac-dhong/"/>
 
 
 
@@ -132,7 +138,7 @@
   };
 </script>
 
-  <title>标签: Test | 小餐包的个人博客</title>
+  <title>python中为何建议在decorator函数中使用functools.wraps | 小餐包的个人博客</title>
   
 
 
@@ -179,7 +185,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,7 +241,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">12</span></a>
   </li>
@@ -284,84 +290,233 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Test<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/03/Python中为何建议在decorator函数中使用functools.wraps-mac-dhong/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小餐包">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/WeChat.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小餐包的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/05/08/测试框架开发总结/" itemprop="url">
-              
-                <span itemprop="name">测试框架开发小结(Draft)</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">python中为何建议在decorator函数中使用functools.wraps
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-05-08T20:28:04+08:00"
-              content="2018-05-08" >
-          05-08
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-03 11:43:00 / 修改时间：12:37:01" itemprop="dateCreated datePublished" datetime="2018-06-03T11:43:00+08:00">2018-06-03</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tech/" itemprop="url" rel="index"><span itemprop="name">Tech</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="python中为何建议在decorator函数中使用functools-wraps"><a href="#python中为何建议在decorator函数中使用functools-wraps" class="headerlink" title="python中为何建议在decorator函数中使用functools.wraps"></a>python中为何建议在decorator函数中使用functools.wraps</h1><p>以最为常见的time_it装饰器函数为例， 如下代码中：</p>
+<ul>
+<li><p>第一个time_it函数没有使用functools.wraps, 功能上这个装饰器并没有什么问题；</p>
+</li>
+<li><p>第二个better_time_it在wrapper函数面前又加了一个@functools.wraps(func)函数， 其他代码一致；</p>
+</li>
+</ul>
+<p><img src="http://p8d0a5y52.bkt.clouddn.com/myblog/180603/fIl5a42m4m.png?imageslim" alt="mark"><br>出来走几步看下，这里我用help函数查看function的doc strings，得到如下结果：</p>
+<ul>
+<li>可以看到使用time_it的foo函数的<strong>docs变成了wrapper函数的docs</strong>；</li>
+<li>而使用better_time_it的yeah函数的docs才是我们期望得到的实际docs；<br>不止help函数的结果会有变化，因为使用装饰器实际上返回的并不是原函数本身，所以原函数相关的metadata信息已经变化了，如果不使用functools.wraps函数就会导致此类副作用，比如序列化和debugger时也会使结果混乱，<strong>所以养成良好的习惯，自定义decorator的时应该尽量使用functools.wraps</strong></li>
+</ul>
+<p><img src="http://p8d0a5y52.bkt.clouddn.com/myblog/180603/md2KeBm37B.png?imageslim" alt="mark"></p>
+<p><strong>关于functools.wraps()函数的官方解释：</strong></p>
+<p><a href="https://devdocs.io/python~2.7/library/functools#functools.wraps" target="_blank" rel="noopener">https://devdocs.io/python~2.7/library/functools#functools.wraps</a><br><img src="http://p8d0a5y52.bkt.clouddn.com/myblog/180603/AjBjKlcjg4.png?imageslim" alt="mark"></p>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/03/Python中为何建议在decorator函数中使用functools.wraps/" rel="next" title="Python中为何建议在decorator函数中使用functools.wraps">
+                <i class="fa fa-chevron-left"></i> Python中为何建议在decorator函数中使用functools.wraps
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/05/Python module Fabric2/" rel="prev" title="Python module Fabric2">
+                Python module Fabric2 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -382,8 +537,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -496,6 +660,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python中为何建议在decorator函数中使用functools-wraps"><span class="nav-number">1.</span> <span class="nav-text">python中为何建议在decorator函数中使用functools.wraps</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -648,6 +828,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script>
+
+
 
   
 
@@ -708,6 +892,23 @@
   </script>
 
   
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: ,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
 
   
 
